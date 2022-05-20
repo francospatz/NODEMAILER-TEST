@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 const nodemailer = require('nodemailer');
 
 app.get('/', (req, res) => {
-  res.send('/sendemail/: < email direction >')
+  res.send(' To send an email, post: /sendemail/: < email direction >')
 })
 
 app.get('/sendemail/:email', async (req, res) => {
